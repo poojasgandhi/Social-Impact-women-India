@@ -3,4 +3,4 @@ This repository encompasses my submission for the WIDS (Women In Data Science) C
 
 Participants were required to predict gender based on demographic and behavioral information of survey respondents from India and their usage of traditional financial and mobile financial services. 
 
-By predicting gender, the datathon teams will explore the key differences in behavior patterns of men and women, and how that may impact their use of new financial services. Ideally, these findings will influence plans to reach women in developing economies and encourage them to adopt new financial tools that will help to lift them and their families out of poverty. 
+By predicting gender, idea was to explore the key differences in behavior patterns of men and women, and how that may impact their use of new financial services. Ideally, these findings would influence plans to reach women in developing economies and encourage them to adopt new financial tools that would help to lift them and their families out of poverty. 
