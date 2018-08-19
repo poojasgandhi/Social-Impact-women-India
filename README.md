@@ -1,4 +1,4 @@
-# Social_Impact_women_India
+# Financial uplift of women in India
 This repository encompasses my submission for the WIDS (Women In Data Science) Challenge for 2018, held in Jan-Mar'18. It was an invite only competition based on InterMedia Survey Institute, a grant recipient of the Bill &amp; Melinda Gates foundation in their Financial Services for the Poor program.  
 
 Participants were required to predict gender based on demographic and behavioral information of survey respondents from India and their usage of traditional financial and mobile financial services. 
@@ -8,7 +8,8 @@ By predicting gender, idea was to explore the key differences in behavior patter
 # Approach
 My objective that I inetnded to achieve through this competition was especially to learn model parmeters tuning in Python. I approach this challenge through two different training data
 
-1. Using only the columns present in Data Dictionary
+__Using only the columns present in Data Dictionary__**
+
 All the column names in the data were coded and not representative on the data. So, my first assumption was probably the organizers didnt want participants to use the variables not present in data dictionary. Accordingly, I started with a subset of the original dataset - only the columns present in dictionary
 
 I decided to start with the Gradient Boosting Model since it is suppossed to be a winning solution for lot of Kaggle challenges
