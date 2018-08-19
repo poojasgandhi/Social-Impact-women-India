@@ -15,15 +15,11 @@ All the column names in the data were coded and not representative on the data. 
 I decided to start with the Gradient Boosting Model since it is suppossed to be a winning solution for lot of Kaggle challenges
 Starting with the base model (with default parameters), I used Grid Search to  methodically tune the parameters of the model as below
 - Fixing learning rate and optimizing # trees
-
-Tuning parameters of tree
-- Optimize max depth and split size sample
-- Optimize the nim # samples in a leaf node
-- Optimize maximum # features in a tree
-
-Tuning the boosting parameters
-- Optimize the sub sample proportion
-- Optimize the learning rate
+- Optimize max depth and split size sample (Tree parameter)
+- Optimize the nim # samples in a leaf node (Tree parameter)
+- Optimize maximum # features in a tree (Tree parameter)
+- Optimize the sub sample proportion (Tuning parameter)
+- Optimize the learning rate (Tuning parameter)
 
 __Using all the columns__
 
@@ -42,7 +38,7 @@ Our team's leaderboard standing was as were as below:
 - Public leaderboard score - 0.97314
 - Rank - 39 (Top 17 %ile)
 
-# File organization
+# Project structure
 - WIDS_data_prep -  Importing data, missing value imputation, feature engineering and other cleaning
 - WIDS_GBM_tuning - GBM model building and tuning (Approach 1 and 2)
 - WIDS_XGB_RF - XGB and RF model building (Approach 2)
