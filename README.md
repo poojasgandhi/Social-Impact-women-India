@@ -8,22 +8,24 @@ By predicting gender, idea was to explore the key differences in behavior patter
 # Approach
 My objective that I inetnded to achieve through this competition was especially to learn model parmeters tuning in Python. I approach this challenge through two different training data
 
-__Using only the columns present in Data Dictionary__**
+__Using only the columns present in Data Dictionary__
 
 All the column names in the data were coded and not representative on the data. So, my first assumption was probably the organizers didnt want participants to use the variables not present in data dictionary. Accordingly, I started with a subset of the original dataset - only the columns present in dictionary
 
 I decided to start with the Gradient Boosting Model since it is suppossed to be a winning solution for lot of Kaggle challenges
 Starting with the base model (with default parameters), I used Grid Search to  methodically tune the parameters of the model as below
 - Fixing learning rate and optimizing # trees
+
 Tuning parameters of tree
 - Optimize max depth and split size sample
 - Optimize the nim # samples in a leaf node
 - Optimize maximum # features in a tree
+
 Tuning the boosting parameters
 - Optimize the sub sample proportion
 - Optimize the learning rate
 
-2. Using all the columns
+__Using all the columns__
 
 GBM
 For this I just use the base model with default parameter values and model with the same parameters as finalized in the first approach
@@ -36,10 +38,11 @@ Instead of tuning these models further, I figured there was a higher gain in bui
 Final submission was an ensemble of the GBM with all variables (parameters tuned based on approach 1) and tuned GBM with variables from data dictioanry only. 
 
 Our team's leaderboard standing was as were as below:
-Private leaderboard score - 0.97233
-Public leaderboard score - 0.97314
-Rank - 39 (Top 17 %ile)
+- Private leaderboard score - 0.97233
+- Public leaderboard score - 0.97314
+- Rank - 39 (Top 17 %ile)
 
-
-
-
+# File organization
+- WIDS_data_prep -  Importing data, missing value imputation, feature engineering and other cleaning
+- WIDS_GBM_tuning - GBM model building and tuning (Approach 1 and 2)
+- WIDS_XGB_RF - XGB and RF model building (Approach 2)
